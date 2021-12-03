@@ -27,11 +27,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
         Word word = getItem(position);
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.miwokView);
         defaultTextView.setText(word.getMiwokTranslation());
-        defaultTextView.setTextSize(30);
+        defaultTextView.setTextSize(18);
         defaultTextView.setTypeface(null, Typeface.BOLD);
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.defaultView);
         miwokTextView.setText(word.getDefaultTranlation());
-        miwokTextView.setTextSize(25);
+        miwokTextView.setTextSize(18);
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
         imageView.setImageResource(word.getImage());
         if(word.hasImage()) {
