@@ -11,6 +11,11 @@ public class Word {
         this.image = image;
     }
 
+    public Word(String mDefaultTranlation, String mMiwokTranslation) {
+        this.mDefaultTranlation = mDefaultTranlation;
+        this.mMiwokTranslation = mMiwokTranslation;
+    }
+
     public String getDefaultTranlation() {
         return mDefaultTranlation;
     }
