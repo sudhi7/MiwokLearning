@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:background="#FFF7DA"/>
+        android:background="#FFF7DA"
+        android:layout_alignParentLeft="true"/>
 
     <LinearLayout
+        android:id="@+id/textViews"
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:orientation="vertical"
+        android:layout_toRightOf="@id/image"
         android:padding="16dp">
 
         <TextView
@@ -30,4 +32,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

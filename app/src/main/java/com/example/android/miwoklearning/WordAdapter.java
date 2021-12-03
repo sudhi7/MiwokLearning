@@ -38,7 +38,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             imageView.setVisibility(View.VISIBLE);
         }
         else {
-            imageView.setVisibility(View.INVISIBLE);
+            imageView.setVisibility(View.GONE);
         }
         return listItemView;
     }
