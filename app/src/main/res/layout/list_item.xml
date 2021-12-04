@@ -8,28 +8,37 @@
         android:layout_width="88dp"
         android:layout_height="88dp"
         android:background="#FFF7DA"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentLeft="true" />
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/textViews"
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:orientation="vertical"
+        android:layout_marginLeft="0dp"
         android:layout_toRightOf="@id/image"
         android:padding="16dp">
-
-        <TextView
-            android:id="@+id/miwokView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/defaultView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/miwokView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/defaultView"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="16dp"
+            android:drawable="@drawable/ic_play_button" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
